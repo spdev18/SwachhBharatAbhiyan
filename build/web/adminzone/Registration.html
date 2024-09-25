@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/hover.css" rel="stylesheet"/>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+           <script>$(document).ready(function(){$("#btn").trigger("click");})</script>
+        <script>
+          function getCaptcha()
+          {
+          var strArr="0123456789ASDRfgTj";
+          var code="";
+          for(var i=0;i<5;i++)
+          {
+             code=code+strArr[Math.floor(Math.random()*17)];
+      
+          }
+          return code;
+      }
+      function demo()
+      {
+          var c=getCaptcha();
+          document.getElementById("s1").innerHTML=c;
+          document.getElementById("hdn1").value=c;
+      }
+        </script>
+    </head>
+    <body onload="demo()">
+               <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="btn" style="display:none" >
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="background:teal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background:darkorange">
+     <div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>       
+	   <div class="modal-footer">
+	   <h4 class="modal-title" id="myModalLabel" style="color:white; margin-right:15%">WELCOME TO REGISTRATION FORM</h4>
+       
+	     <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+      </div>
+	 </div>    
+    </div>
+  </div>
+</div>
+        
+   <div class="container-fluid">
+         <div class="row">
+<div class="col-sm-12" style="min-height:100px;font-size:70px;text-align:center;color:teal;font-weight:bold; text-shadow: 1px 2px 2px red;background:">
+    <marquee direction="right" behavior="alternate" scrollamount="15">SWACHH BHARAT ABHIYAN</marquee>
+</div></div> 
+       <div class="row">
+           <h1 style="color: teal;margin-left: 41%"><u>REGISTRATION FORM</u></h1><br><br>
+       </div>
+      
+       <div class="row">
+               
+             <form method="post" action="registration" enctype="multipart/form-data">  
+          <div class="col-sm-8" style=" margin-left: 21%; border:3px solid teal;"> <br>     
+                   
+                Name<input type="text" name="name" class="form-control"/>  <br> 
+                        Gender <br> <input type="radio" name="gender" value="male"/>Male
+                               <input type="radio" name="gender" value="male"/>Female
+                               <input type="radio" name="gender" value="male"/>Other<br><br>
+                        Mobile    <input type="number" name="mob" class="form-control"/> <br><br>
+                        Qualification 
+                        <select name="quali" class="from-control">
+                            <option>--select--</option>
+                            <option>m.tech</option>
+                            <option>b.tech</option>
+                            <option>diploma</option>
+                        </select><br><br>
+                        Email       <input type="email" name="email" class="from-control"/>
+                        <br><br>
+                        password     <input type="password" name="pass" class="from-control"/><br><br>
+                        profile 
+                        <input type="file" name="profile" class="from-control"/><br>
+                        <br>
+
+                        captcha code
+                        <span style="font-size: 30px; font-family: corsive; color: red ; margin-left:120px">
+                            <strike id="s1">shiv</strike>   
+
+
+                        </span> 
+                        <span class="fa fa-refresh" style="font-size: 30px; margin-left: 2%; cursor: pointer" title="refresh" onclick="demo()"></span>
+                        <input type="hidden" name="hdn1" id="hdn1"/>
+                        <br><br>
+                        
+                        enter above captcha code
+                        <input type="text" class="form-control" name="cc1"/><br><br>
+                        <input type="submit" name="Register now" class="btn btn-success"/><br><br>
+            </div>
+                  </form>
+                
+                  
+            </div> 
+        </div>
+    </body>
+</html>

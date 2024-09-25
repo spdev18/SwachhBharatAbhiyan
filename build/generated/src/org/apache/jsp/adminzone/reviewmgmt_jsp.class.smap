@@ -1,0 +1,16 @@
+SMAP
+reviewmgmt_jsp.java
+JSP
+*S JSP
+*F
++ 0 reviewmgmt.jsp
+adminzone/reviewmgmt.jsp
+*L
+5,19:46
+24,7:66
+30,2:73
+32,3:75,3
+35:84
+36:85,3
+37,4:88
+*E

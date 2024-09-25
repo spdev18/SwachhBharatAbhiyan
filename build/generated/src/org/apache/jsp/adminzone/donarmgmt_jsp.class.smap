@@ -1,0 +1,16 @@
+SMAP
+donarmgmt_jsp.java
+JSP
+*S JSP
+*F
++ 0 donarmgmt.jsp
+adminzone/donarmgmt.jsp
+*L
+5,15:46
+20,6:62
+25,2:68
+27,4:70,3
+31,4:82
+35:86,3
+36,4:89
+*E

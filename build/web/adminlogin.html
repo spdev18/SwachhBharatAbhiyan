@@ -1,0 +1,259 @@
+<html> 
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/hover.css" rel="stylesheet"/>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+    </head>
+    <style> 
+
+            /*set border to the form*/ 
+
+              
+
+            form { 
+
+                    border: 3px solid #f1f1f1; 
+
+                } 
+
+            /*assign full width inputs*/ 
+
+              
+
+            input[type=text], 
+
+            input[type=password] { 
+
+                    width: 100%; 
+
+                    padding: 12px 20px; 
+
+                    margin: 8px 0; 
+
+                    display: inline-block; 
+
+                    border: 1px solid #ccc; 
+
+                    box-sizing: border-box; 
+
+                } 
+
+            /*set a style for the buttons*/ 
+
+              
+
+            button { 
+
+                    background-color: #4CAF50; 
+
+                    color: white; 
+
+                    padding: 14px 20px; 
+
+                    margin: 8px 0; 
+
+                    border: none; 
+
+                    cursor: pointer; 
+
+                    width: 100%; 
+
+                } 
+
+            /* set a hover effect for the button*/ 
+
+              
+
+            button:hover { 
+
+                    opacity: 0.8; 
+
+                } 
+
+            /*set extra style for the cancel button*/ 
+
+              
+
+            .cancelbtn { 
+
+                    width: auto; 
+
+                    padding: 10px 18px; 
+
+                    background-color: #f44336; 
+
+                } 
+
+            /*centre the display image inside the container*/ 
+
+              
+
+            .imgcontainer { 
+
+                    text-align: center; 
+
+                    margin: 24px 0 12px 0; 
+
+                } 
+
+            /*set image properties*/ 
+
+              
+
+            img.avatar { 
+
+                    width: 40%; 
+
+                    border-radius: 50%; 
+
+                } 
+
+            /*set padding to the container*/ 
+
+              
+
+            .container { 
+
+                    padding: 16px; 
+
+                } 
+
+            /*set the forgot password text*/ 
+
+              
+
+            span.psw { 
+
+                    float: right; 
+
+                    padding-top: 16px; 
+
+                } 
+
+            /*set styles for span and cancel button on small screens*/ 
+
+              
+
+            @media screen and (max-width: 300px) { 
+
+                    span.psw { 
+
+                            display: block; 
+
+                            float: none; 
+
+                        } 
+
+                    .cancelbtn { 
+
+                            width: 100%; 
+
+                        } 
+
+                } 
+     #menu ul li a:hover{background-color:red; border-radius: 10px;}
+      #menu ul li :hover > ul{display:block;}
+    </style> 
+    <body style="background:"> 
+        
+        
+         <!-- NavBar Start Here -->
+        <div class="container-fluid">
+              <div class="row" style="margin-top:1%">
+        <nav class="navbar navbar-default" style="background: teal; border-radius: 20px; font-size: 16px;">
+            <div class="container-fluid"  id="menu">
+       <ul  class="nav navbar-nav">
+           <li><a href="website.html" Style="color:white">HOME</a></li> 
+           <li><a href="About us.html" Style="color:white">ABOUT US</a></li> 
+        <li>
+          <a href="#"  style="color: white" data-toggle="dropdown">LOGIN</a>
+          <ul class="dropdown-menu">
+          <!--  <li><a href="userlogin.html">USER LOGIN</a></li> -->
+            <li><a href="adminlogin.html">ADMIN LOGIN</a></li>
+          </ul>
+        </li>
+          <li><a href="Enquiry.html" Style="color:white">CONNECT</a></li>
+            <li><a href="#" Style="color:white" data-toggle="dropdown">SETTING</a>
+             <ul class="dropdown-menu">
+            <li><a href="changepassword.html">CHANGE PASSWORD</a></li>
+            <li><a href="logout.html">LOGOUT</a></li>
+          </ul>
+                <li><a href="Registration.html" Style="color:white">REGISTRATION</a></li>
+         <li><a href="Events.html" Style="color:white">IMAGE GALLERY</a>   </li> 
+          <li><a href="review.jsp" Style="color:white">REVIEW</a>   </li>
+           <li><a href="donar.html" Style="color:white">DONATION</a>   </li> 
+           <li><a href="social.html" Style="color:white">SOCIAL MEDIA</a>   </li> 
+      </ul>
+            </div>
+            </nav>
+</div>
+        </div>     
+            <!-- NavBar End Here -->    
+        
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12" style="min-height:100px;font-size:70px;text-align:center;color:teal;font-weight:bold; text-shadow: 1px 2px 2px red;background:">
+                    <marquee direction="right" behavior="alternate" scrollamount="15">SWACHH BHARAT ABHIYAN</marquee>
+                </div></div>    
+            <div class="row">   
+                <form action="codes/adminlogincode.jsp"  method="post">
+                    <div class="col-sm-3" style="margin-top: 3%;margin-left: 37%;border: 5px solid black; color:white; background: teal"> 
+                       <center> <h1><center><u>Admin Login</u></h1></center><br><br>
+                        <label><b>Email</b></label> 
+                        <input type="text" placeholder="Enter Name" name="userid" class="form-control"> <br><br>
+                        <label><b>Password</b></label>  <input type="password" placeholder="Enter Password" name="pass" class="form-control"> <br><br>
+                        <button type="submit" class="btn btn-success">Login</button> 
+                        <input type="checkbox" checked="checked"> Remember me<br> <br>
+
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                        <span class="psw">Forgot <a href="#" style="color: white">password?</a></span><br><br> </div>
+                </form>
+            </div>
+  <!-- footer start here -->
+     <div class="row" style="background: teal; margin-top: 5px; color: white">
+         <div class="col-sm-3">
+             <h4 style="cursor: pointer">Terms&Conditionds</h4>
+                <h4 style="cursor: pointer">Archives</h4>
+                   <h4 style="cursor: pointer">Privacy Policy</h4>
+                      <h4 style="cursor: pointer">Hyperlink Policy</h4>
+                      <h4 style="cursor: pointer">Copyright Policy</h4>
+                                            <h4 style="cursor: pointer">Disclaimer</h4>
+
+         </div>
+         
+         <div class="col-sm-3" style="margin-top:1%;margin-bottom: 1%">
+             <span class="fa fa-envelope" style="font-size: 25px; cursor: pointer"> Give Feedback </span>
+             <br><br><span class="fa fa-phone"  style="font-size: 25px; cursor: pointer">  Contact Us - 1969 <br><br> @ UP, Gonda, Balharai-271123 </span>
+         </div>
+         <div class="col-sm-3" style="margin-top:0%;margin-left: 0%">
+          <h3 align="center"  style="cursor: pointer"><u>Related Links</u></h3> 
+          <h4  style="cursor: pointer">||swachhbharatmission.gov.in||</h4>
+          <h4  style="cursor: pointer">||sbm.gov.in||</h4>
+          <h4  style="cursor: pointer">||swachhbharat.mygov.in||</h4>
+          <h4 style="cursor: pointer">||swachhbharaturban.gov.in||</h4>
+         </div>
+         
+         <div class="col-sm-3">
+             <span class="fa fa-share-square" style="font-size:35px; margin-top: 2%;cursor: pointer"> Share It On </span>
+        
+      <br><br>      <span class="fa fa-facebook" style="font-size:35px; margin-left: 23%;cursor: pointer"> Facebook </span>
+         
+         <span class="fa fa-google" style="font-size:35px; margin-left: 23%;cursor: pointer"> Google </span>
+         
+         <span class="fa fa-twitter" style="font-size:35px; margin-left: 23%;cursor: pointer"> Twitter </span>
+         
+         </div>
+      <!--     <div class="col-sm-12">
+      <h4 style="color:white;background: teal" align="center"><u>This Website is Hosted by Shivam Pandey</u></h4>  </div> -->
+     </div>
+     <!-- footer start here -->
+     
+        </div> 
+    </body>
+
+
